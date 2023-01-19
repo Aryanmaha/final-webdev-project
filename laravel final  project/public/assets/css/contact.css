@@ -1,0 +1,20 @@
+*{
+    margin: 0px;
+    padding: 0px;   
+    box-sizing: border-box;
+}
+
+form .row{
+    margin: 10px 0px;
+}
+form textarea{
+    padding: 10px;
+    margin-top: 10px;
+}
+.submit-button{
+    background-color: black!important;
+}
+.submit-button:hover{
+    background-color: rgba(38, 166, 91, 0.8)!important;
+    border-color: rgba(38, 166, 91, 0.8)!important;
+}

@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.category_main{
+    max-width: 73%;
+    margin:5px auto;
+}
+.category_grid{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    max-width: 100%;
+}
+.category{
+    position: relative;
+    display: block;
+    float:left;
+    width: 30%;
+    height: 30vh;
+    flex:0 0 auto;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.category img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.category:hover{
+    transform: scale(1.1);
+    transition: 0.4s ease-in-out;
+}
+.category_title{
+    position: absolute;
+    bottom:8px;
+    left:10px;
+}
+.category_title h2{
+    background-color: rgba(0, 0, 0, 0.7);
+    color: azure;
+    padding: 10px;
+    font-size: 1.5rem;
+    width: fit-content;
+    border-radius: 10px;
+}
+/* styling for category page with post */
+.category_content{
+    position: relative ;
+    height: 30vh;
+    width: 100%; 
+}
+.category_content img{
+    height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.category_content h2{
+    position: absolute;
+    top:20px;
+    left:10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: azure;
+    padding: 10px;
+    font-size: 1.7rem;
+    width: fit-content;
+    border-radius: 20px;
+
+}
+.category_content p{
+    position: absolute;
+    width: fit-content;
+    bottom:30px;
+    left:10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    color: black;
+    padding: 10px;
+    width: 95%;
+    border-radius: 20px;
+}
+/* styling for the post seciton inside the category part */
+.category_post{
+    margin-top: 30px;
+    padding: 20px;
+}
+.category_post .card-header{
+    font-size: 2rem;
+}
+.category_post ul li a{
+    font-size: 1.5rem;
+}
+.category_post ul li a:hover{
+    color: rgba(0, 0, 0, 0.6)!important;
+} 
+.category_post ul li .created_meta{
+    display: flex;
+    justify-content: flex-start;
+}
+.category_post ul li .created_meta h6{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+    margin-right : 10px;
+}
+
+.post_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.post_title{
+    margin: 0 0 20px 0;
+}
+.post_title h1{
+    font-size: 2rem;
+}
+.post_title h2{
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+.post_video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.post_author{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.post_description{
+    font-size: 1.5rem;
+}
+.post_author h3{
+    font-size: 1rem;
+     color: rgba(0, 0, 0, 0.7);
+}
